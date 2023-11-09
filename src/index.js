@@ -28,8 +28,7 @@ function load(){
 
 load();
 
-btn.addEventListener('click', () => {
-
+btn.addEventListener('click', function() {
   body.classList.toggle('darkmode');
   icon.classList.add('animated');
 
@@ -44,7 +43,7 @@ btn.addEventListener('click', () => {
     icon.classList.add('fa-sun');
   }
 
-  setTimeout( () => {
+  setTimeout(function() {
     icon.classList.remove('animated');
-  }, 500)
+  }, 500);
 })
